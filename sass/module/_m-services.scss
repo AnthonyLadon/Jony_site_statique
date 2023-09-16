@@ -1,0 +1,78 @@
+.m-services{
+    background-color: $background-color-2;
+    padding: 8rem 0 8rem 0;
+
+    h3{
+        padding: 0 0 2rem 0;
+    }
+
+    h4{
+        color: $jony-color;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 300;
+        margin: 0 0 1rem 0;
+    }
+}
+
+
+.m-services p{
+    text-align: center;
+    padding: 2rem 3rem;
+    font-weight: 100;
+}
+
+.m-services-mobile{
+    margin: 2rem 0 0 0;
+    padding: 0 0 1rem 0;
+    border: solid $jony-color 1px;
+    .m-services-icon{
+        height: 8rem;
+        background-image: url(../img/svg_icon/1.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.m-services-development{
+    margin: 2rem 0 0 0;
+    padding: 3px;
+    border: solid $jony-color 1px;
+    .m-services-icon{
+        height: 8rem;
+        background-image: url(../img/svg_icon/2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.m-services-commerce{
+    margin: 2rem 0 0 0;
+    padding: 3px;
+    border: solid $jony-color 1px;
+    .m-services-icon{
+        height: 8rem;
+        background-image: url(../img/svg_icon/3.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+
+// TABLETTE ********************************************************
+
+@media screen and(min-width: map-get($break-point, md)){
+
+    .m-services{
+        padding: 8rem 0 8rem 0;
+    }
+
+    .m-services-responsive{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+
+}
+

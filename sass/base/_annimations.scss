@@ -1,0 +1,77 @@
+
+
+        @keyframes hop{
+            from{
+                transform: rotate(0deg);
+            }
+    
+            10%{
+                transform: rotate(-10deg);
+            }
+    
+            20%{
+                transform: rotate(-20deg);
+            }
+    
+            30%{
+                transform: rotate(-10deg);
+            }
+    
+            40%{
+                transform: rotate(0deg);
+            }
+    
+            60%{
+                transform: rotate(10deg);
+            }
+    
+            70%{
+                transform: rotate(20deg);
+            }
+    
+            80%{
+                transform: rotate(10deg);
+            }
+    
+            to{
+                transform: rotate(0deg);
+            }
+        }
+
+        
+
+        @keyframes blink {
+            from{
+                border-radius: 0;
+            }
+        
+            10%{
+                border-radius: 8px;
+                background-color:rgb(233, 230, 230);
+            }
+        
+            20%{
+                border-radius: 16px;
+                background-color:rgb(221, 217, 217);
+            }
+        
+            30%{
+                border-radius: 32px;
+                background-color:white;
+                color: black;
+            }
+    
+            40%{
+                border-radius: 40px;
+                background-color:rgb(233, 230, 230);
+            }
+    
+            50%{
+                border-radius: 16px;
+                background-color:rgb(221, 217, 217);
+            }
+    
+            to{
+                border-radius: 0;
+            }
+        }

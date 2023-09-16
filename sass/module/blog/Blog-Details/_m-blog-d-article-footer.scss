@@ -1,0 +1,156 @@
+
+.m-blog-d-article-footer{
+    
+    @include border-bottom;
+
+&>p{
+    display: inline-block;
+    color: grey;
+    margin: 2rem auto;
+    text-align: center;
+    }
+}
+
+.m-blog-d-article-footer-likes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.m-blog-d-article-footer-icon{
+    display: block;
+    width: 1rem;
+    margin: 0 1rem 0 0;
+    background: url(../img/icons/heart-solid.svg) no-repeat;
+    background-position: center;
+    background-size: 16px;
+}
+
+.m-blog-d-article-social{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    a{
+        color: grey;
+        padding: 0 10px;
+    }
+
+}
+
+.m-blog-d-article-nav{
+    padding: 0 0 3rem 0;
+    border-bottom: solid rgb(236, 234, 234) 2px;
+}
+
+.m-blog-d-article-nav-previous{
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 1fr;
+    margin: 4rem 0 0 0;
+
+    img{
+        margin: 0;
+    }
+
+    a{
+        color: black;
+    }
+}
+
+
+.m-blog-d-article-nav-previous-text{
+    padding: 0 0 0 1rem;
+}
+
+.m-blog-d-article-nav-next{
+    display: grid;
+    justify-content:end;
+    grid-template-columns: 9rem 4rem;
+    grid-template-rows: 1fr;
+    margin: 2rem 0 0 0;
+
+    img{
+        margin: 0;
+    }
+
+    a{
+        color: black;
+    }
+}
+
+
+.m-blog-d-article-nav-next-text{
+    text-align: end;
+    padding: 0 1rem 0 0;
+}
+
+
+.m-blog-d-article-quote{
+    color: black;
+    background-color: #fbf8ff;
+    margin: 2rem 0;
+    padding: 1rem 1rem 1rem 6rem;
+    background-image: url(../img/blog/harvard-milan.png);
+    background-repeat: no-repeat;
+    background-position:1rem 50%;
+    background-size: 3rem;
+
+    h3{
+        font-size: 16px;
+        margin: 0 0 2rem 0;
+    }
+
+}
+
+
+
+// TABLETTE *****************************************************************
+
+
+
+@media screen and(min-width: map-get($break-point, md)){
+
+    
+    .m-blog-d-article-footer-likes-social{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        a{
+            color: grey;
+            padding: 35px 10px 0 10px;
+        }
+    }
+
+    .m-blog-d-article-footer-likes{
+        justify-content: start;
+    }
+
+    .m-blog-d-article-social{
+        justify-content: end;
+        margin: 0;
+    }
+
+    .m-blog-d-article-nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .m-blog-d-article-nav-previous{
+        margin: 2rem 0 0 0;
+    }
+
+    .m-blog-d-article-quote{
+        background-size: 5rem;
+        padding: 1rem 1rem 1rem 8rem;
+
+        h3{
+            margin: 0;
+        }
+    }
+
+}

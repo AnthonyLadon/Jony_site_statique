@@ -1,0 +1,86 @@
+
+.m-blog-d-comments-section{
+
+    @include border-bottom;
+    color: grey;
+    padding: 4rem 0 5rem 0;
+    margin: 0 1rem;
+
+    h5{
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0 0 2rem 0;
+    }
+
+    p{
+        font-weight: 300;
+    }
+}
+
+.m-blog-d-comment{
+    padding: 0 1rem 3rem 6rem;
+}
+
+.m-blog-d-comment-display{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 0 0;
+
+    h6{
+        font-size: 16px;
+        color: black;
+    }
+
+    p{
+        margin: 0 1rem;
+    }
+
+    p:nth-child(3){
+        color: black;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+}
+
+.m-blog-d-comment{
+
+    &:nth-child(2){
+        background-image: url(../img/comment/john-smith.png);
+        background-repeat: no-repeat;
+        font-weight: 500;
+    }
+
+    &:nth-child(3){
+        background-image: url(../img/comment/paul-john.png);
+        background-repeat: no-repeat;
+    }
+
+    &:nth-child(4){
+        background-image: url(../img/comment/franck-bond.png);
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+// TABLETTE ****************************************************************
+
+
+@media screen and(min-width: map-get($break-point, md)){
+
+    .m-blog-d-comments-section{
+
+    h5{
+        font-size: 16px;
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+}

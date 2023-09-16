@@ -1,0 +1,74 @@
+
+
+.l-main-header{
+    background-image: url(../img/banner/background_header.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    padding: 1rem 0 12rem 1rem;
+
+    img{
+        width: 7rem;
+        position: sticky;
+        top: 0;
+        }
+}
+
+.l-main-header-menu-display{
+    height: 12rem;
+}
+
+.l-main-header-contact{
+    display: none;
+}
+
+
+
+// TABLETTE *********************************************************************
+
+@media screen and(min-width: map-get($break-point, md)){
+
+
+
+    .l-main-header-menu-display{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 1rem;
+        justify-content: space-around;
+        height: 5rem;
+
+        img{
+            width: 4rem;
+            position: initial;
+            padding: 12px 0 0 0;
+        }
+    }
+    
+    .l-main-header{
+        padding: 0;
+    }
+
+
+    .l-main-header-contact{
+
+        display: block;
+        padding: 12px 0 0 0;
+
+        a{
+            display: block;
+            text-align: center;
+            padding: 4px 0 0 0;
+            width: 7rem;
+            height: 28px;
+            color: $jony-color;
+            border: solid $jony-color 1px;
+            font-size: $tablette-font-size;
+        }
+
+        a:hover{
+            animation-name: hop;
+            animation-duration: 0.4s;
+        }
+    }
+
+}

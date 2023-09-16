@@ -1,0 +1,100 @@
+
+.m-presentation{
+    padding:  6rem 0 8rem 0;
+    font-weight: 100;
+    background-color: $background-color-1;
+}
+
+.m-presentation h3{
+    padding: 0 0 2rem 0;
+    font-size: 25px;
+}
+
+.m-presentation  a{
+    display: block;
+    text-align: center;
+    margin: 4rem 0 3rem 0;
+    padding: 1rem 0 0 0;
+    width: 13rem;
+    height: 4rem;
+    color: $jony-color;
+    border: solid $jony-color 2px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.m-presentation-bars p, .m-presentation-bars h4{
+    display: inline;
+    margin: 0 0 0 0;
+}
+
+.m-presentation-bars p{
+    text-align: end;
+}
+
+.m-presentation-bars-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+
+.m-progress-bar{
+    height: 6px;
+    background-color: $basic-color;
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    border-radius: 5px;
+}
+
+
+// Modification du "width" de la barre de progression 
+// directement dans le html (balise style)
+
+ .m-progress-bar-wireframing, .m-progress-bar-ui, .m-progress-bar-interaction{
+     display: block;
+     height: 6px;
+     background-color: $jony-color;
+     border-radius: 5px;
+ }
+
+
+
+ @media screen and(min-width: map-get($break-point, md)){
+
+
+    .m-presentation{
+        padding:  6rem 0 8rem 0;
+    }
+
+    .m-presentation h3{
+        margin: 0 10rem 0 0;
+    }
+
+    .m-presentation-responsive{
+        display: flex;
+    }
+
+    .m-presentation-text{
+        width: 50%;
+        margin: 0 1rem 0 0;
+    }
+
+    .m-presentation-bars{
+        width: 50%;
+        margin: 0 0 0 1rem;
+    }
+
+    .m-presentation a{ 
+        display: block;
+        text-align: center;
+        margin: 3rem 0 3rem 0;
+        padding: 1rem 0 0 0;
+        width: 9rem;
+        height: 3rem;
+        color: $jony-color;
+        border: solid $jony-color 2px;
+        font-size: $tablette-font-size;
+    }
+
+
+ }

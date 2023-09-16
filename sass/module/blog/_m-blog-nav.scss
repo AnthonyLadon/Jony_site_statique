@@ -1,0 +1,45 @@
+
+.m-nav-buttons{
+
+    margin: 0 auto;
+    padding: 3rem 0;
+    width: 50%;
+
+    a, p{
+        display: inline-block;
+        color: black;
+        font-weight: 300;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 10px 0;
+        margin: 0 auto;
+        border: solid lightgrey 1px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    p:nth-child(3){
+        background-color: #efebf3;
+    }
+}
+
+
+
+// Tablette ******************************************************************
+
+
+
+@media screen and(min-width: map-get($break-point, md)){
+
+    .m-nav-buttons{
+
+        width: 33%;
+
+        a, p{
+            width: 2rem;
+            height: 2rem;
+            padding: 6px 0;
+        }
+    }
+
+}

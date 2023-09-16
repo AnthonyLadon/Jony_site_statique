@@ -1,0 +1,75 @@
+
+
+.m-blog-d-article{
+    color: black;
+    margin: 0 1rem;
+    
+    img{
+        margin: 9rem auto 2rem;
+    }
+
+    h3{
+        margin: 0 0 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    p{
+        display: inline;
+        color: grey;
+        font-weight: 300;
+        line-height : 2;
+    }
+}
+
+
+.m-blog-d-article-text{
+
+    @include border-bottom;
+
+    p{
+        display: block;
+        margin: 1rem auto;
+    }
+}
+
+.m-blog-d-article-frame{
+    border: solid #f0f1f6 1rem;
+    margin: 2rem 0 2rem 0;
+    font-weight: 500;
+
+    p{
+        display: block;
+        padding: 1rem;
+        color: rgb(129, 125, 125);
+        font-weight: 500;
+        border-left: solid 2px black;
+    }
+}
+
+
+
+// Tablette ******************************************************************
+
+
+
+@media screen and(min-width: map-get($break-point, md)){
+
+   .m-blog-d-article-wrapper{
+
+    h3{
+        font-size: 18px;
+    }
+    
+    }
+
+    .m-blog-d-article{
+        color: black;
+        
+        img{
+            margin: 1rem auto 2rem;
+        }
+    }
+    
+
+}

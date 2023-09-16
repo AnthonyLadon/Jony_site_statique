@@ -1,0 +1,62 @@
+
+
+.m-testimonial{
+
+    background-color: $background-color-2;
+    padding: 4rem 0 5rem 1rem;
+
+    p{
+        padding: 3rem 2rem 4rem 0rem;
+        text-align: start;
+        font-size: 1.5rem;
+    }
+
+    i{
+        display: none;
+    }
+}
+
+
+.m-testimonial-picture{
+
+    img{
+        width: 6rem;
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+
+    h5{
+        color: $jony-color;
+        font-size: 28px;
+        padding: 12px 0 1rem 0;
+    }
+
+    p{
+        padding: 0;
+        font-size: 16px;
+    }
+}
+
+
+
+// TABLETTE **********************************************************
+
+@media screen and (min-width: map-get($break-point, md)){
+
+.m-testimonial{
+    
+    background-color: $background-color-2;
+    padding: 4rem 0 2rem 0;
+
+    i{
+        display: block;
+        width: 10rem;
+        color: lightgrey;
+        font-size: 3rem;
+        position: relative;
+        margin: 5rem auto 0;
+        justify-content: center;
+    }
+} 
+
+}

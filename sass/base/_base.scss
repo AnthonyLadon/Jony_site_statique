@@ -1,0 +1,28 @@
+
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $mobile-font-size;
+}
+
+h3{
+    font-size: 32px;
+}
+
+@media screen and(min-width: map-get($break-point, md)){
+    body{
+        font-size: $tablette-font-size;
+    }
+
+}
+
+
+@media screen and(min-width: map-get($break-point, lg)){
+
+    body{
+        font-size: $pc-font-size;
+    }
+}

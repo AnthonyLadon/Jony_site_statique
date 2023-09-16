@@ -1,0 +1,103 @@
+
+.m-blog-post{
+    margin: 2rem auto;
+    width: 93%;
+    background-color: white;
+    box-shadow: 0 2rem 2rem -1rem rgb(226, 223, 223);
+
+    h3{
+        font-size: 22px;
+        font-weight: bolder;
+        margin: 0 0 1rem 0;
+        padding: 0 1rem;
+    }
+
+    a{
+        color: black;
+    }
+
+    a:hover{
+        color: $jony-color;
+    }
+
+    p{
+        font-weight: 200;
+        margin: 0 0 1rem 0;
+        padding: 0 1rem;
+    }
+
+}
+
+
+.m-blog-post:first-child{
+    margin: 9rem auto 0 auto;
+}
+
+.m-blog-post-date{
+    position: relative;
+    bottom: 4rem;
+    left: 1rem;
+    width: 4.5rem;
+    height: 5rem;
+    background-color: red;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+
+    p:first-child{
+        font-weight: 400;
+        padding: 1rem 0 0 0;
+        margin: 0;
+    }
+
+}
+
+.m-blog-article-comments-counter{
+    display: grid;
+    grid-template-columns: 10.5rem 10rem;
+    padding: 0 0 1.5rem 0;
+    font-size: smaller;
+
+    p{
+        font-weight: 200;
+    }
+
+    p:first-child::after{
+        content: "|";
+        font-weight: 400;
+        padding: 0 0 0 1rem;
+    }
+
+    p:first-child{
+        background: url(../img/icons/user-solid.svg) no-repeat;
+        background-position: 0.5rem;
+        padding: 0 0 0 2.5rem;
+    }
+
+    p:nth-child(2){
+        background: url(../img/icons/comments-solid.svg) no-repeat;
+        padding: 0 0 0 2.5rem;
+    }
+}
+
+
+
+// Tablette ******************************************************************
+
+
+
+@media screen and(min-width: map-get($break-point, md)){
+
+    .m-blog-d-article-wrapper{
+
+        h3{
+            font-size: 18px;
+        }
+    }
+
+    .m-blog-post:first-child{
+        margin: 0 auto;
+    }
+}
+

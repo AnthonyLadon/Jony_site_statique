@@ -1,0 +1,22 @@
+
+.wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.m-wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+    color: $basic-color;
+    padding: 0 1rem;
+}
+
+
+// TABLETTE **********************************************************
+
+@media screen and (min-width: map-get($break-point, md)){
+
+    .m-wrap{
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,53 @@
+
+// base
+
+    // variables & mixins
+    @import "base/variables";
+    @import "base/mixins";
+
+    // reset
+    @import "base/reset";
+
+    // base
+    @import "base/base";
+    @import "base/annimations";
+
+
+// layout
+@import "layout/header";
+@import "layout/nav";
+@import "layout/wrap";
+@import "layout/footer";
+
+// modules
+@import "module/m-header";
+@import "module/m-presentation";
+@import "module/m-services";
+@import "module/m-works";
+@import "module/m-clients-say";
+
+// home
+@import "module/home/m-home-layout";
+@import "module/home/m-home-header";
+
+// blog & blog-details
+    @import "module/blog/m-blog-article";
+    @import "module/blog/m-blog-nav";
+    @import "module/blog/m-blog-aside";
+    @import "module/blog/m-blog-responsive-display";
+    // details
+
+    @import "module/Blog/Blog-Details/m-blog-d-article";
+    @import "module/Blog/Blog-Details/m-blog-d-comments.scss";
+    @import "module/Blog/Blog-Details/m-blog-d-form.scss";
+    @import "module/Blog/Blog-Details/m-blog-d-article-footer";
+
+// contact
+@import "module/contact/m-contact-form";
+
+// services
+@import "module/services/m-services-page";
+
+// works
+@import "module//works-details/works-details";
+
